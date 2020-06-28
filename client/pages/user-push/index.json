@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "l-status-show": "/miniprogram_npm/lin-ui/status-show/index",
+    "l-segment": "/miniprogram_npm/lin-ui/segment/index",
+    "l-segment-item": "/miniprogram_npm/lin-ui/segment-item/index",
+    "m-list": "/components/list/index"
+  },
+  "navigationBarTitleText": "我的发布"
+}

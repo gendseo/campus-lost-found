@@ -1,0 +1,77 @@
+.p-push-form {
+  box-sizing: border-box;
+}
+
+.p-push-form-row {
+  margin-bottom: 24rpx;
+  background-color: #fff;
+}
+
+.p-push-form-row-header {
+  height: 66rpx;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  font-size: 28rpx;
+  color: #333;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-push-form-row-image-picker {
+  padding-bottom: 12rpx;
+}
+
+.p-push-form-row-switch {
+  height: 88rpx;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  font-size: 28rpx;
+  color: #333;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-push-form-row-radio-left {
+  margin-right: 35rpx;
+  font-size: 28rpx !important;
+}
+
+.p-push-form-row-radio-right {
+  margin-right: 35rpx;
+  margin-left: 35rpx;
+  font-size: 28rpx !important;
+}
+
+.p-push-form-submit {
+  padding-top: 12rpx;
+  padding-bottom: 12rpx;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-push-form-submit-btn {
+  height: 68rpx !important;
+}
+
+/* custom class */
+.p-push-form-custom-image-picker {}
+
+.p-push-form-custom-image-picker-item {
+  width: 160rpx !important;
+  height: 160rpx !important;
+  border-radius: 12rpx !important;
+}
+
+.p-push-form-custom-image-picker-item image {
+  width: 100% !important;
+  height: 100% !important;
+}

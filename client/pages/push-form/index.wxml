@@ -1,0 +1,52 @@
+<l-status-show wx:if="{{showOK}}" show="{{showOK}}" type="success"></l-status-show>
+<view wx:else class="p-push-form">
+  <view class="p-push-form-row">
+    <l-input label="物品名称" placeholder="请输入物品名称" value="{{title}}" bind:linfocus="onChangeTitle" bind:linblur="onChangeTitle" />
+  </view>
+  <view class="p-push-form-row">
+    <l-textarea placeholder="对物品比较详细的描述！" border="{{false}}" auto-height="{{true}}" bind:linfocus="onChangeDescription" bind:linblur="onChangeDescription" />
+  </view>
+  <view class="p-push-form-row">
+    <l-list title="物品类型" gap="{{25}}" right-desc="{{ sort === '' ? '请选择' : sort }}" bind:lintap="onChangeSort"></l-list>
+  </view>
+  <view class="p-push-form-row">
+    <view class="p-push-form-row-header">
+      <text>物品图片</text>
+      <text>{{ image.length }}/3</text>
+    </view>
+    <view class="p-push-form-row-image-picker">
+      <l-image-picker count="3" custom="{{true}}" bind:linchange="onChangeImagePicker" bind:linremove="onRemoveImagePicker" l-class="p-push-form-custom-image-picker" l-item-class="p-push-form-custom-image-picker-item">
+        <l-icon name="picture" color="#3963bc" size="48" />
+      </l-image-picker>
+    </view>
+  </view>
+  <view class="p-push-form-row">
+    <view class="p-push-form-row-switch">
+      <text>{{type === '招领' ? '拾放校区' : '丢失校区' }}</text>
+      <l-radio-group placement="row" current="{{campus}}" none-checked="{{false}}" bind:linchange="onChangeCampus">
+        <l-radio key="杨林校区" l-class="p-push-form-row-radio-left">杨林校区</l-radio>
+        <l-radio key="海源校区" l-class="p-push-form-row-radio-right">海源校区</l-radio>
+      </l-radio-group>
+    </view>
+    <l-input label="{{type === '招领' ? '拾放地点' : '丢失地点' }}" placeholder="如食堂、教学楼、奶茶店等等！" bind:linfocus="onChangeLocal" bind:linblur="onChangeLocal" />
+  </view>
+  <view class="p-push-form-row">
+    <l-input label="尊姓大名" placeholder="如何称呼您~" bind:linfocus="onChangeUser" bind:linblur="onChangeUser" />
+    <l-list title="联系方式" gap="{{25}}" right-desc="{{ auth === '' ? '请选择' : auth }}" bind:lintap="onChangeAuth"></l-list>
+    <view wx:if="{{auth === '手机'}}">
+      <l-input label="手机号" placeholder="请输入手机号" bind:linfocus="onChangeContact" bind:linblur="onChangeContact" />
+    </view>
+    <view wx:elif="{{auth === 'QQ'}}">
+      <l-input type="number" label="QQ号" placeholder="请输入QQ号" bind:linfocus="onChangeContact" bind:linblur="onChangeContact" />
+    </view>
+    <view wx:elif="{{auth === '微信'}}">
+      <l-input label="微信号" placeholder="请输入微信号" bind:linfocus="onChangeContact" bind:linblur="onChangeContact" />
+    </view>
+    <view wx:else></view>
+  </view>
+  <view class="p-push-form-submit">
+    <l-button size="large" l-class="p-push-form-submit-btn" bind:lintap="onSubmit">提交</l-button>
+  </view>
+  <l-action-sheet />
+  <l-message />
+</view>

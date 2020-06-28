@@ -1,0 +1,42 @@
+.p-user {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.p-user-header {
+  height: 30%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-user-header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-user-header-content>text {
+  margin-left: 24rpx;
+  font-size: 28rpx;
+  color: #45526b;
+}
+
+.p-user-card {
+  margin-top: 60rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
+  box-shadow: 0 5rpx 20rpx 0 rgba(0, 0, 0, .1);
+}
+
+/* 自定义样式 */
+.p-user-custom-header-avatar {
+  background-color: rgba(0, 0, 0, 0) !important;
+}

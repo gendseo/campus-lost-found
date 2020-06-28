@@ -1,0 +1,38 @@
+<l-status-show wx:if="{{showNone}}" show="{{showNone}}" type="error" full-screen="{{true}}" describe="页面走丢了~"></l-status-show>
+<view wx:if="{{isShow && !showNone}}" class="p-detail">
+  <view class="p-detail-header">
+    <view class="p-detail-header-left">
+      <view class="p-detail-header-left-mark"></view>
+      {{item.type}}详情
+    </view>
+    <view class="p-detail-header-right">{{item.sort}}</view>
+  </view>
+  <view class="p-detail-campus">
+    <view class="p-detail-campus-avatar">
+      <l-avatar l-class="p-detail-campus-avatar-bg" size="80" icon="address" icon-color="#00a8cc" icon-size="40" />
+    </view>
+    <view class="p-detail-campus-info">
+      <view class="p-detail-campus-info-title">{{item.campus}}·{{item.local}}</view>
+      <view class="p-detail-campus-info-time">{{item.time}}</view>
+    </view>
+  </view>
+  <view class="p-detail-content">
+    <view class="p-detail-content-title">{{item.title}}</view>
+    <view class="p-detail-content-description">{{item.description}}</view>
+    <view class="p-detail-content-image">
+      <image wx:for="{{item.image}}" src="{{item}}" data-index="{{index}}" bind:tap="onClickPreviewImage" />
+    </view>
+  </view>
+  <view class="p-detail-contact">
+    <l-list title="{{item.user}}" desc="联系我时请说是在商院失物招领小程序看到的" icon="user" is-link="{{false}}" gap="25" />
+    <l-list title="{{item.auth}}" desc="{{item.contact}}" icon="eye" is-link="{{false}}" gap="25" tag-content="复制" tag-position="right" bind:lintap="onClickContact" />
+    <view wx:if="{{audit}}" class="p-detail-audio">
+      <l-button type="success" size="mini" data-status="{{1}}" bind:tap="onClickAudit">
+        审核通过
+      </l-button>
+      <l-button type="error" size="mini" data-status="{{-1}}" bind:tap="onClickAudit">
+        审核失败
+      </l-button>
+    </view>
+  </view>
+</view>

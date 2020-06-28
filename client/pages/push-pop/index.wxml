@@ -1,0 +1,22 @@
+<view class="p-push">
+  <view class="p-push-row">
+    <view class="p-push-row-col" style="background-color: #00a8cc" bind:tap="onClickFound">
+      <view class="p-push-row-col-header">
+        <view class="p-push-row-col-header-title">招领</view>
+        <view class="p-push-row-col-header-icon">
+          <l-icon name="add" color="#fff" />
+        </view>
+      </view>
+      <view class="p-push-row-col-description">捡到东西？</view>
+    </view>
+    <view class="p-push-row-col" style="background-color: #ff677d" bind:tap="onClickLost">
+      <view class="p-push-row-col-header">
+        <view class="p-push-row-col-header-title">失物</view>
+        <view class="p-push-row-col-header-icon">
+          <l-icon name="research" color="#fff" />
+        </view>
+      </view>
+      <view class="p-push-row-col-description">丢了东西？</view>
+    </view>
+  </view>
+</view>

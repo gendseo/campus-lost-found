@@ -1,0 +1,14 @@
+<view class="p-user">
+  <view class="p-user-header" bind:tap="onClickLogin">
+    <l-avatar wx:if="{{isLogin}}" open-data="{{['userAvatarUrl','userNickName']}}" />
+    <view wx:else class="p-user-header-content">
+      <l-avatar size="120" src="/images/tabbar/user.svg" l-class="p-user-custom-header-avatar" />
+      <text>还没有登录~</text>
+    </view>
+  </view>
+  <view class="p-user-card">
+    <l-list title="我的发布" icon="order" bind:tap="onClickMyPush" gap="25" />
+    <l-list wx:if="{{isSuper}}" gap="25" title="管理员审核" icon="customer-service" badge-count="{{auditLen}}" badge-position="right" bind:tap="onClickAudit" />
+    <l-list title="意见反馈" icon="edit" gap="25" bind:tap="onClickFeedback" />
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="p-user-push">
+  <view class="p-user-push-header">
+    <l-segment placement="top" active-color="#3963bc" bind:linchange="onChangeStatus">
+      <l-segment-item tab="全部" key="" />
+      <l-segment-item tab="待审核" key="0" />
+      <l-segment-item tab="已通过" key="1" />
+      <l-segment-item tab="未通过" key="-1" />
+    </l-segment>
+  </view>
+  <view class="p-user-push-list">
+    <l-status-show wx:if="{{showNone}}" show="{{showNone}}" type="order" full-screen="{{false}}" describe="您还没有发布呢~" l-class="p-user-push-custom-status-show"></l-status-show>
+    <m-list wx:else list="{{list}}" showStatus="{{true}}" />
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<view class="p-home">
+  <view class="p-home-header">
+    <l-segment placement="top" scrollable="{{true}}" active-color="#3963bc" bind:linchange="onChangeStatus">
+      <l-segment-item tab="全部" key="" />
+      <l-segment-item wx:for="{{sortList}}" tab="{{item.name}}" key="{{item.name}}" />
+    </l-segment>
+  </view>
+  <l-status-show wx:if="{{showNone}}" show="{{showNone}}" type="product" full-screen="{{true}}" describe="暂时还没有物品哦~" l-class="p-home-custom-status-show"></l-status-show>
+  <view wx:else class="p-home-list">
+    <m-list list="{{list}}" />
+  </view>
+</view>

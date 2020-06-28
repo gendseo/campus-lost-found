@@ -1,0 +1,16 @@
+<view class="m-list">
+  <m-card
+    wx:for="{{list}}"
+    showStatus="{{showStatus}}"
+    status="{{item.status}}"
+    type="{{item.type}}"
+    title="{{item.title}}"
+    description="{{item.description}}"
+    image="{{item.image}}"
+    campus="{{item.campus}}"
+    local="{{item.local}}"
+    time="{{item.time}}"
+    data-id="{{item._id}}"
+    bind:tap="onClickItem"
+  />
+</view>

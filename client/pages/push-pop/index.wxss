@@ -1,0 +1,36 @@
+.p-push {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.p-push-row {
+  padding-top: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.p-push-row-col {
+  width: 30%;
+  padding: 20rpx;
+  border-radius: 12rpx;
+}
+
+.p-push-row-col-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.p-push-row-col-header-title {
+  font-size: 115%;
+  color: #fff;
+}
+
+.p-push-row-col-header-icon {}
+
+.p-push-row-col-description {
+  font-size: 85%;
+  color: #f1f1f1;
+}

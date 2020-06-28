@@ -1,0 +1,4 @@
+<l-status-show wx:if="{{showNone}}" show="{{showNone}}" type="order" full-screen="{{true}}" describe="没有物品需要审核~"></l-status-show>
+<view wx:else class="p-user-audit">
+  <m-list list="{{list}}" isAudit="{{true}}" />
+</view>

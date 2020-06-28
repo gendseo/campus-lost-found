@@ -1,0 +1,85 @@
+.m-card {
+  padding: 24rpx;
+  margin: 30rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
+  box-shadow: 0 4rpx 20rpx 0 rgba(212, 217, 223, .5);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.m-card-header {
+  display: flex;
+}
+
+.m-card-header-type {
+  color: #fff;
+  font-size: 85%;
+  font-weight: bold;
+  padding: 0 20rpx;
+  margin-right: 16rpx;
+  border-radius: 8rpx;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-card-header-title {}
+
+.m-card-content {
+  font-size: 85%;
+  color: #434e52;
+  margin-top: 12rpx;
+}
+
+.m-card-img {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12rpx;
+}
+
+.m-card-img>image {
+  max-width: 30%;
+  max-height: 200rpx;
+  border-radius: 12rpx;
+  border: 1px solid #f1f1f1;
+}
+
+.m-card-img>image:nth-child(2) {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.m-card-footer {
+  font-size: 80%;
+  color: #434e52;
+  margin-top: 12rpx;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.m-card-footer-campus {
+  display: flex;
+}
+
+.m-card-footer-campus-title {
+  font-weight: bold;
+}
+
+.m-card-footer-campus-subtitle {}
+
+.m-card-footer-time {
+  color: #000080;
+}
+
+.m-card-line {
+  height: 8rpx;
+  margin-top: -6rpx;
+  margin-left: 85%;
+  border-radius: 6rpx;
+}

@@ -1,0 +1,14 @@
+.p-login {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-login-btn {
+  margin-top: 50rpx;
+}

@@ -1,0 +1,28 @@
+<wxs module="dateUtil" src="../../util/date.wxs"></wxs>
+<view class="m-card">
+  <view wx:if="{{ showStatus }}">
+    <view wx:if="{{ status === -1 }}" class="m-card-line" style="background-color: #fd5e53;"></view>
+    <view wx:elif="{{ status === 1 }}" class="m-card-line" style="background-color: #75b79e;"></view>
+    <view wx:else class="m-card-line" style="background-color: #6a8caf;"></view>
+  </view>
+  <view class="m-card-header">
+    <view class="m-card-header-type" style="background-color: {{ type === '招领' ? '#00a8cc' : '#ff677d'}}">
+      <text>{{type}}</text>
+    </view>
+    <view class="m-card-header-title">
+      <text>{{title}}</text>
+    </view>
+  </view>
+  <view class="m-card-content">{{description}}</view>
+  <view class="m-card-img">
+    <image wx:for="{{image}}" src="{{item}}" mode="aspectFit" />
+  </view>
+  <view class="m-card-footer">
+    <view class="m-card-footer-campus" style="color: {{ type === '招领' ? '#00a8cc' : '#ff677d' }}">
+      <view class="m-card-footer-campus-title">{{campus}}</view>
+      <text>·</text>
+      <view class="m-card-footer-campus-subtitle">{{local}}</view>
+    </view>
+    <view class="m-card-footer-time">{{dateUtil.formatTime(time)}}</view>
+  </view>
+</view>

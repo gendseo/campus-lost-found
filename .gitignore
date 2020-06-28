@@ -1,0 +1,11 @@
+# 文件系统
+.DS_Store
+*.jpg
+*.png
+
+# 小程序端
+miniprogram_npm
+node_modules
+pac
+yarn.lock
+package-lock.json

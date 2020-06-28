@@ -1,0 +1,18 @@
+.p-user-push {
+  box-sizing: border-box;
+}
+
+.p-user-push-header {
+  background-color: #fff;
+}
+
+.p-user-push-list {
+  height: calc(100vh - 80rpx);
+  overflow-y: scroll;
+}
+
+.p-user-push-custom-status-show {
+  background-color: #fff !important;
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -1,0 +1,19 @@
+.p-home {
+  box-sizing: border-box;
+}
+
+.p-home-header {
+  background-color: #fff;
+}
+
+.p-home-list {
+  height: calc(100vh - 200rpx);
+  overflow-y: scroll;
+}
+
+.p-home-custom-status-show {
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: 80rpx;
+  background-color: #fff !important;
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "l-status-show": "/miniprogram_npm/lin-ui/status-show/index",
+    "l-avatar": "/miniprogram_npm/lin-ui/avatar/index",
+    "l-list": "/miniprogram_npm/lin-ui/list/index",
+    "l-button": "/miniprogram_npm/lin-ui/button/index"
+  },
+  "navigationBarTitleText": "物品详情"
+}
