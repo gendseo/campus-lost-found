@@ -1,7 +1,9 @@
 # 文件系统
 .DS_Store
-*.jpg
-*.png
+client/*.jpg
+client/*.png
+cloud/*.jpg
+cloud/*.png
 
 # 小程序端
 miniprogram_npm
